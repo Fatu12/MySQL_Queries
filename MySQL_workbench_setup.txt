@@ -1,0 +1,28 @@
+Write the query to select all the names in the database. The columns should appear, even if there are no records in 
+the database yet.
+    SELECT * 
+    FROM my_db.names;
+Insert your own name into the database!
+    SELECT * 
+    FROM my_db.names;
+    INSERT INTO my_db.names (name)
+    VALUES ("Fatu");
+
+Insert another name or, NINJA BONUS: insert more than one name in a single statement.
+    SELECT * FROM my_db.names;
+    INSERT INTO my_db.names (name)
+    VALUES ("Fatu"),
+          ("Brenda"),
+          ("Mariya");
+Optional: Try creating, updating and deleting records using the statements you've learn about.
+    updating:
+        SELECT * FROM my_db.names;
+        UPDATE  my_db.names
+        SET name = "Jenny"
+        WHERE id = 3;
+    deleting:
+        SELECT * FROM my_db.names;
+        DELETE 
+        FROM my_db.names
+        WHERE id = 4;
+    
